@@ -6,6 +6,22 @@
 		<Nullable>enable</Nullable>
 		<Version>1.0.0</Version>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+		<PackageId>Threem.File.UploaderKit</PackageId>
+		<Authors>Threem Technology Solutions Pvt Ltd</Authors>
+		<Company>Threem Technology Solutions Pvt Ltd</Company>
+		<Description>
+			A robust file uploader for .NET using Azure Blob Storage and MongoDB/SQL Server for metadata.
+		</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+		<RepositoryUrl>https://github.com/threemsystemuser/Threem.File.UploaderKit.git</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/threemsystemuser/Threem.File.UploaderKit.git</PackageProjectUrl>
+		<RepositoryType>git</RepositoryType>
+
+		<!-- Tags for NuGet search -->
+		<PackageTags>uploader file azure blob metadata mongo sql</PackageTags>
+
 	</PropertyGroup>
 
 	<ItemGroup>
