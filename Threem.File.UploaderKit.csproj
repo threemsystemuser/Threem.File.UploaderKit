@@ -20,21 +20,50 @@
 		<RepositoryType>git</RepositoryType>
 
 		<!-- Tags for NuGet search -->
-		<PackageTags>uploader file azure blob metadata mongo sql</PackageTags>
+		<PackageTags>file-upload azure-blob-storage metadata mongodb sql-server dotnet csharp file-storage azure-storage azure-blob database-integration cloud-storage file-management upload-service</PackageTags>
+		<Copyright>© 2025 Threem Technology Solutions. All rights reserved.</Copyright>
+		<PackageReleaseNotes>
+			Release Notes – Version 1.0.0
+			Release Date: 11-Aug-2025
 
+			Overview:
+			This is the first official release of Threem.File.UploaderKit, marking the start of our product journey.
+			This version includes the core features and a stable foundation for future updates.
+
+			Notes:
+			This is the first production-ready release. Users are encouraged to share feedback to help us improve future versions.
+		</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Azure.Storage.Blobs" Version="12.24.0" />
-	  <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.3.0" />
-	  <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
-	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
-	  <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.7" />
-	  <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
-	  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.7" />
-	  <PackageReference Include="MongoDB.Driver" Version="3.3.0" />
-	  <PackageReference Include="NLog" Version="5.4.0" />
-	  <PackageReference Include="NLog.Extensions.Logging" Version="5.4.0" />
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.24.0" />
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.3.0" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.7" />
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.7" />
+		<PackageReference Include="MongoDB.Driver" Version="3.3.0" />
+		<PackageReference Include="NLog" Version="5.4.0" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.4.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<None Update="LICENSE.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="README.md">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 </Project>
